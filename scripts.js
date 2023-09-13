@@ -227,12 +227,17 @@ const statDivs = document.querySelectorAll('.stat-container');
 
 function handleImageClick(event) {
   const clickedImageId = event.target.id;
-  const correspondingStatDiv = document.querySelector(`#${clickedImageId.replace('-icon', '')}.stat-container`);
+  const allStatDivs = document.querySelectorAll('.stat-container');
+  allStatDivs.forEach(function (div) {
+    div.classList.add('hide');
+  });
 
+  // Show the corresponding div with the matching ID
+  const correspondingStatDiv = document.querySelector(`#${clickedImageId.replace('-icon', '')}.stat-container`);
   if (correspondingStatDiv) {
-    correspondingStatDiv.classList.toggle('hide');
-    console.log(correspondingStatDiv);
+    correspondingStatDiv.classList.remove('hide');
   }
+
 }
 
 
