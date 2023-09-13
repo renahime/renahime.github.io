@@ -237,7 +237,6 @@ function handleImageClick(event) {
   if (correspondingStatDiv) {
     correspondingStatDiv.classList.remove('hide');
   }
-
 }
 
 

@@ -362,6 +362,12 @@ ul{
   display:none;
 }
 
+.pdc{
+  display:flex;
+  flex-direction: column;
+}
+
+
 #directory-links{
   display:block;
 }
@@ -677,13 +683,13 @@ a:visited{
   color:var(--accent)
 }
 .image-descriptor {
-  background-color: var(--specific-2);
+  background-color: var(--lightest);
   margin: 20px auto;
   box-sizing: content-box;
   padding: 15px;
   border-radius: 20px;
   border: dotted var(--darkest) 5px;
-  box-shadow: 0px 0px 0px 5px var(--specific-2);
+  box-shadow: 0px 0px 0px 5px var(--lightest);
   text-align: center; /* Center the content horizontally */
   font-family: 'lemon';
   display: inline-block; /* Adjust width based on content size */
